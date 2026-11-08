@@ -1,6 +1,6 @@
 # Job-Inbox Email Classifier — Technical Spec
 
-Status: draft v2 · 2026-11-08 · No code yet.
+Status: v2 · 2026-11-08 · Implemented on `main` (see README for setup).
 
 ## 1. Goal
 
@@ -89,11 +89,14 @@ email_classified_agent/
 ├── test/
 │   ├── fixtures/
 │   │   ├── emails/              # anonymized eval emails (.json, format in §11.2)
-│   │   └── mime/                # a few synthetic raw MIME samples for extract tests
+│   │   └── mime/                # synthetic Gmail API messages (format=full JSON) for extract tests
 │   ├── rules.test.ts
 │   ├── extract.test.ts
 │   ├── llm.test.ts              # parsing/validation with mocked responses
 │   ├── webhook-auth.test.ts
+│   ├── process.test.ts          # shared loop: skip, dry run, time budget, re-check
+│   ├── endpoints.test.ts        # HTTP status codes of both functions
+│   ├── check-fixtures.test.ts   # personal-data scanner + fixture schema
 │   └── safety.test.ts           # asserts no forbidden Gmail calls exist (§9)
 ├── vercel.json
 ├── package.json
@@ -192,7 +195,7 @@ If step 2 fails, still run step 3, then return `500` so the failure shows up in 
 When an email could fit more than one label:
 
 1. **Rejections**: any not-selected or role-closed message, *even from a real person and even if it's polite or mentions "future opportunities"*.
-2. **Interview / Recruiter**: a human writing about a role, interview or next steps. This also covers interview invitations or scheduling links sent through an ATS on a recruiter's behalf, and LinkedIn/Naukri notifications that a *recruiter sent you a message*.
+2. **Interview / Recruiter**: a human writing about a role, interview or next steps. This also covers interview invitations or scheduling links sent through an ATS on a recruiter's behalf, coding tests or assessments sent for a specific role I applied to, and LinkedIn/Naukri notifications that a *recruiter sent you a message*.
 3. **Job Alerts**: automated listings or recommendations.
 4. **Other**: application-received confirmations, "complete your profile", OTPs, newsletters, assessment-platform marketing, account and security mails, and so on.
 
@@ -210,6 +213,8 @@ Initial rule set. The exact sender addresses must be **confirmed against real ma
 - Foundit (`foundit.in`), Indeed (`indeed.com` / `indeedemail.com`, alert senders only), Glassdoor, Instahyre, Cutshort, Hirist, Wellfound: alert senders and subjects only.
 
 Rule changes are code changes (edit `rules.config.ts` and redeploy). Every rule has a fixture test.
+
+**Guard:** if the subject looks like it's about my own application (e.g. "your application", "interview", "unfortunately", "update on", "sent you a message", "assessment"), no rule fires and the LLM decides, even for a platform sender. For the same reason, `jobs-noreply@linkedin.com` (which also sends application confirmations and employer updates) only matches with alert-style subject wording.
 
 ### 7.4 LLM (`lib/llm.ts`, `lib/prompt.ts`)
 
@@ -280,7 +285,7 @@ Email bodies are **never** logged; subject and sender are logged for debuggabili
 ## 11. Testing and rollout
 
 ### 11.1 Unit tests (vitest)
-MIME extraction using the synthetic samples in `test/fixtures/mime/` (plain, HTML-only, multipart, quoted reply); rules against the eval fixtures; LLM output parsing (valid, fenced, wrong case, junk, missing label); webhook auth (correct key, wrong key, missing key, different length); the safety grep.
+Extraction using the synthetic Gmail API messages in `test/fixtures/mime/` (plain, HTML-only, multipart, quoted reply); rules against the eval fixtures; LLM output parsing (valid, fenced, wrong case, junk, missing label); webhook auth (correct key, wrong key, missing key, different length); the safety grep.
 
 ### 11.2 Eval set: sources and format
 The new account is empty, so the eval set is built outside it:

@@ -1,0 +1,32 @@
+{
+  "_comment": "Synthetic Gmail API message (users.messages.get, format=full). Not real mail.",
+  "id": "m-quoted",
+  "threadId": "m-quoted",
+  "labelIds": [
+    "INBOX",
+    "UNREAD"
+  ],
+  "snippet": "Thanks! Confirming Thursday 3 PM.",
+  "internalDate": "1760432400000",
+  "payload": {
+    "headers": [
+      {
+        "name": "From",
+        "value": "Neha Verma <neha.verma@example-corp.com>"
+      },
+      {
+        "name": "To",
+        "value": "candidate@example.com"
+      },
+      {
+        "name": "Subject",
+        "value": "Re: Data Engineer role"
+      }
+    ],
+    "mimeType": "text/plain",
+    "body": {
+      "size": 1,
+      "data": "VGhhbmtzISBDb25maXJtaW5nIFRodXJzZGF5IDMgUE0uCgpOZWhhCgpPbiBNb24sIE9jdCAxMywgMjAyNSBhdCAxMDowMCBBTSBDYW5kaWRhdGUgPGNhbmRpZGF0ZUBleGFtcGxlLmNvbT4Kd3JvdGU6Cj4gSGkgTmVoYSwgVGh1cnNkYXkgd29ya3MgZm9yIG1lLgo-IFJlZ2FyZHMK"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "alert-001",
+  "expected": "Job Alerts",
+  "source": "handwritten",
+  "notes": "Naukri automated job alert (should be caught by the naukri-alerts rule).",
+  "email": {
+    "from": {
+      "name": "Naukri Job Alerts",
+      "address": "jobalerts@naukrialerts.com"
+    },
+    "replyTo": null,
+    "to": [
+      "candidate@example.com"
+    ],
+    "cc": [],
+    "subject": "25 new jobs matching your profile",
+    "date": "2026-10-23T03:30:00Z",
+    "headers": {
+      "List-Unsubscribe": "<https://example.com/unsub>",
+      "Precedence": "bulk"
+    },
+    "bodyText": "Jobs based on your profile\n\nData Analyst - Example Corp - Bengaluru - 2-5 Yrs\nSenior Analyst - Example Ltd - Pune - 3-6 Yrs\nBusiness Intelligence Developer - Example Systems - Remote - 4-8 Yrs\n\nView all 25 jobs: https://example.com/jobs\n\nYou are receiving this mail because you created a job alert. Manage alerts.",
+    "snippet": "Jobs based on your profile Data Analyst - Example Corp - Bengaluru"
+  }
+}

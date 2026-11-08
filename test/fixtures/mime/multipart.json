@@ -1,0 +1,75 @@
+{
+  "_comment": "Synthetic Gmail API message (users.messages.get, format=full). Not real mail.",
+  "id": "m-multi",
+  "threadId": "m-multi",
+  "labelIds": [
+    "INBOX",
+    "UNREAD"
+  ],
+  "snippet": "PLAIN VERSION: please pick an interview slot.",
+  "internalDate": "1760432400000",
+  "payload": {
+    "headers": [
+      {
+        "name": "From",
+        "value": "Example Corp via Greenhouse <no-reply@greenhouse.io>"
+      },
+      {
+        "name": "To",
+        "value": "candidate@example.com"
+      },
+      {
+        "name": "Subject",
+        "value": "Schedule your interview"
+      }
+    ],
+    "mimeType": "multipart/mixed",
+    "parts": [
+      {
+        "mimeType": "multipart/alternative",
+        "parts": [
+          {
+            "mimeType": "text/plain",
+            "headers": [
+              {
+                "name": "Content-Type",
+                "value": "text/plain; charset=UTF-8"
+              }
+            ],
+            "body": {
+              "size": 1,
+              "data": "UExBSU4gVkVSU0lPTjogcGxlYXNlIHBpY2sgYW4gaW50ZXJ2aWV3IHNsb3Qu"
+            }
+          },
+          {
+            "mimeType": "text/html",
+            "headers": [
+              {
+                "name": "Content-Type",
+                "value": "text/html; charset=UTF-8"
+              }
+            ],
+            "body": {
+              "size": 1,
+              "data": "PHA-SFRNTCBWRVJTSU9OOiBwbGVhc2UgcGljayBhbiBpbnRlcnZpZXcgc2xvdC48L3A-"
+            }
+          }
+        ]
+      },
+      {
+        "mimeType": "text/plain",
+        "filename": "resume_notes.txt",
+        "headers": [
+          {
+            "name": "Content-Disposition",
+            "value": "attachment; filename=resume_notes.txt"
+          }
+        ],
+        "body": {
+          "size": 1,
+          "attachmentId": "att1"
+        }
+      }
+    ]
+  }
+}

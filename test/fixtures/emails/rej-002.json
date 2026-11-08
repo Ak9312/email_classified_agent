@@ -1,0 +1,22 @@
+{
+  "id": "rej-002",
+  "expected": "Rejections",
+  "source": "handwritten",
+  "notes": "Rejection written personally by a named recruiter (human sender, but Rejections wins).",
+  "email": {
+    "from": {
+      "name": "Riya Sharma",
+      "address": "riya.sharma@example-corp.com"
+    },
+    "replyTo": null,
+    "to": [
+      "candidate@example.com"
+    ],
+    "cc": [],
+    "subject": "Re: Backend Engineer - next steps",
+    "date": "2026-10-20T11:40:00Z",
+    "headers": {},
+    "bodyText": "Hi Candidate,\n\nThanks again for speaking with Arjun and me last week, we really enjoyed the conversation.\n\nI'm sorry to share that the team has decided not to proceed with your candidature for the Backend Engineer role. It was a close call, and the feedback on your system design round was positive.\n\nI'd be happy to stay in touch for future roles.\n\nRegards,\nRiya\nTalent Acquisition, Example Corp",
+    "snippet": "Hi Candidate, Thanks again for speaking with Arjun and me last week"
+  }
+}

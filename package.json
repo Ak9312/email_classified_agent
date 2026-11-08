@@ -1,0 +1,32 @@
+{
+  "name": "job-inbox-classifier",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Labels a job-application Gmail inbox: Gmail watch -> Pub/Sub -> Vercel -> OpenRouter free model -> add label only.",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20.12"
+  },
+  "scripts": {
+    "test": "npm run check-fixtures && vitest run",
+    "typecheck": "tsc --noEmit",
+    "check-fixtures": "tsx scripts/check-fixtures.ts",
+    "eval": "tsx scripts/eval.ts",
+    "get-refresh-token": "tsx scripts/get-refresh-token.ts",
+    "start-watch": "tsx scripts/start-watch.ts"
+  },
+  "dependencies": {
+    "google-auth-library": "^11.3.3",
+    "googleapis": "^189.0.0",
+    "html-to-text": "^10.0.1",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/html-to-text": "^9.0.4",
+    "@types/node": "^26.6.6",
+    "@vercel/node": "^30.0.0",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vitest": "^5.1.0"
+  }
+}

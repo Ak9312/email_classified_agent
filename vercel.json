@@ -1,0 +1,8 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "functions": {
+    "api/gmail-push.ts": { "maxDuration": 300 },
+    "api/cron/renew-watch.ts": { "maxDuration": 300 }
+  },
+  "crons": [{ "path": "/api/cron/renew-watch", "schedule": "30 2 * * *" }]
+}

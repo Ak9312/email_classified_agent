@@ -1,0 +1,25 @@
+{
+  "id": "rej-003",
+  "expected": "Rejections",
+  "source": "handwritten",
+  "notes": "Role put on hold / closed notice, no explicit 'not selected'.",
+  "email": {
+    "from": {
+      "name": "Example Ltd Careers",
+      "address": "careers@example-corp.com"
+    },
+    "replyTo": {
+      "name": "Example Ltd HR",
+      "address": "hr@example-corp.com"
+    },
+    "to": [
+      "candidate@example.com"
+    ],
+    "cc": [],
+    "subject": "Update regarding the Product Analyst opening",
+    "date": "2026-10-22T06:05:00Z",
+    "headers": {},
+    "bodyText": "Dear Candidate,\n\nWe are writing to let you know that the Product Analyst position (Pune) you applied for has been put on hold due to a change in business priorities, and the requisition is now closed.\n\nWe will not be continuing with interviews for this role. Thank you for your patience and interest in Example Ltd.\n\nHR Team, Example Ltd",
+    "snippet": "Dear Candidate, We are writing to let you know that the Product Analyst position"
+  }
+}

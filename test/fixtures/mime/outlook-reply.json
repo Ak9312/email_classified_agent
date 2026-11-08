@@ -1,0 +1,32 @@
+{
+  "_comment": "Synthetic Gmail API message (users.messages.get, format=full). Not real mail.",
+  "id": "m-outlook",
+  "threadId": "m-outlook",
+  "labelIds": [
+    "INBOX",
+    "UNREAD"
+  ],
+  "snippet": "Sounds good, talk soon.",
+  "internalDate": "1760432400000",
+  "payload": {
+    "headers": [
+      {
+        "name": "From",
+        "value": "Arjun Rao <arjun.rao@example-corp.com>"
+      },
+      {
+        "name": "To",
+        "value": "candidate@example.com"
+      },
+      {
+        "name": "Subject",
+        "value": "RE: Offer discussion"
+      }
+    ],
+    "mimeType": "text/plain",
+    "body": {
+      "size": 1,
+      "data": "U291bmRzIGdvb2QsIHRhbGsgc29vbi4KCkZyb206IENhbmRpZGF0ZSA8Y2FuZGlkYXRlQGV4YW1wbGUuY29tPgpTZW50OiBNb25kYXksIE9jdG9iZXIgMTMsIDIwMjUgMTA6MDAgQU0KVG86IEFyanVuIFJhbwpTdWJqZWN0OiBPZmZlciBkaXNjdXNzaW9uCgpPTEQgUVVPVEVEIFRFWFQ"
+    }
+  }
+}

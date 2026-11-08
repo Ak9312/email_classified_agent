@@ -1,0 +1,25 @@
+{
+  "id": "int-004",
+  "expected": "Interview / Recruiter",
+  "source": "handwritten",
+  "notes": "Coding assessment sent for a specific role applied to (next step, not platform marketing).",
+  "email": {
+    "from": {
+      "name": "Example Corp Hiring Team",
+      "address": "support@hackerrank.com"
+    },
+    "replyTo": {
+      "name": "Example Corp Hiring Team",
+      "address": "hiring@example-corp.com"
+    },
+    "to": [
+      "candidate@example.com"
+    ],
+    "cc": [],
+    "subject": "Example Corp invites you to a coding test for Software Engineer",
+    "date": "2026-10-21T10:00:00Z",
+    "headers": {},
+    "bodyText": "Hi Candidate,\n\nThank you for applying to the Software Engineer role at Example Corp. As the next step of the hiring process, please complete the online coding test below.\n\nDuration: 90 minutes\nDeadline: 3 days from now\n\nStart test: https://example.com/test\n\nGood luck!\nExample Corp Hiring Team",
+    "snippet": "Hi Candidate, Thank you for applying to the Software Engineer role at Example Corp"
+  }
+}

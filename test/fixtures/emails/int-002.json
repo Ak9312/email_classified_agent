@@ -1,0 +1,24 @@
+{
+  "id": "int-002",
+  "expected": "Interview / Recruiter",
+  "source": "handwritten",
+  "notes": "LinkedIn notification that a recruiter sent a message (must not be caught by LinkedIn job-alert rules).",
+  "email": {
+    "from": {
+      "name": "LinkedIn",
+      "address": "messages-noreply@linkedin.com"
+    },
+    "replyTo": null,
+    "to": [
+      "candidate@example.com"
+    ],
+    "cc": [],
+    "subject": "Karan Mehta sent you a new message",
+    "date": "2026-10-18T14:02:00Z",
+    "headers": {
+      "List-Unsubscribe": "<https://example.com/unsub>"
+    },
+    "bodyText": "Karan Mehta\nSenior Technical Recruiter at Example Corp\n\n\"Hi Candidate, I came across your profile and think you'd be a great fit for a Senior Data Analyst role on our team in Bengaluru. Would you be open to a quick call this week?\"\n\nReply\nhttps://example.com/messaging\n\nYou are receiving notification emails. Unsubscribe.",
+    "snippet": "Karan Mehta Senior Technical Recruiter at Example Corp"
+  }
+}

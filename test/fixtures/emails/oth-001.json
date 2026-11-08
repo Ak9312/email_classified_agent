@@ -1,0 +1,22 @@
+{
+  "id": "oth-001",
+  "expected": "Other",
+  "source": "handwritten",
+  "notes": "Automated application-received confirmation (not an interview, not a rejection).",
+  "email": {
+    "from": {
+      "name": "Example Corp Careers",
+      "address": "examplecorp@myworkdayjobs.com"
+    },
+    "replyTo": null,
+    "to": [
+      "candidate@example.com"
+    ],
+    "cc": [],
+    "subject": "Thank you for applying to Example Corp",
+    "date": "2026-10-12T17:20:00Z",
+    "headers": {},
+    "bodyText": "Dear Candidate,\n\nThank you for your application for the role of Analytics Engineer (Job ID: XXXX). We have received it and our recruiting team will review your qualifications.\n\nIf your profile matches the requirements, a member of our team will contact you. You can check your application status at any time in the candidate portal.\n\nSincerely,\nExample Corp Talent Acquisition",
+    "snippet": "Dear Candidate, Thank you for your application for the role of Analytics Engineer"
+  }
+}

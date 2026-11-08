@@ -1,0 +1,44 @@
+{
+  "_comment": "Synthetic Gmail API message (users.messages.get, format=full). Not real mail.",
+  "id": "m-plain",
+  "threadId": "m-plain",
+  "labelIds": [
+    "INBOX",
+    "UNREAD"
+  ],
+  "snippet": "Hi Candidate, Can you do a call tomorrow at 11?",
+  "internalDate": "1760432400000",
+  "payload": {
+    "headers": [
+      {
+        "name": "From",
+        "value": "\"Sharma, Riya\" <Riya.Sharma@Example-Corp.com>"
+      },
+      {
+        "name": "To",
+        "value": "candidate@example.com, \"Other, Person\" <other@example.com>"
+      },
+      {
+        "name": "Cc",
+        "value": "hr@example-corp.com"
+      },
+      {
+        "name": "Reply-To",
+        "value": "Recruiting <jobs@example-corp.com>"
+      },
+      {
+        "name": "Subject",
+        "value": "  Interview for Data Analyst  "
+      },
+      {
+        "name": "Date",
+        "value": "Tue, 14 Oct 2025 09:00:00 +0000"
+      }
+    ],
+    "mimeType": "text/plain",
+    "body": {
+      "size": 1,
+      "data": "SGkgQ2FuZGlkYXRlLA0KDQoNCg0KQ2FuICAgeW91IGRvIGEgY2FsbAl0b21vcnJvdyBhdCAxMT8NCg0KVGhhbmtzLA0KUml5YQ"
+    }
+  }
+}

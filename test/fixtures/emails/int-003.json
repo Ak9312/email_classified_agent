@@ -1,0 +1,24 @@
+{
+  "id": "int-003",
+  "expected": "Interview / Recruiter",
+  "source": "handwritten",
+  "notes": "Naukri relaying a recruiter's direct message (naukri.com sender, but not an alert).",
+  "email": {
+    "from": {
+      "name": "Naukri",
+      "address": "info@naukri.com"
+    },
+    "replyTo": null,
+    "to": [
+      "candidate@example.com"
+    ],
+    "cc": [],
+    "subject": "Recruiter from Example Corp sent you a message",
+    "date": "2026-10-19T05:45:00Z",
+    "headers": {
+      "List-Unsubscribe": "<https://example.com/unsub>"
+    },
+    "bodyText": "Pooja Iyer, HR Manager at Example Corp, has sent you a message regarding the role Business Analyst (3-5 yrs), Hyderabad.\n\n\"Dear Candidate, your profile has been shortlisted. Please share your availability for a telephonic discussion tomorrow between 11 AM and 4 PM.\"\n\nView and reply: https://example.com/naukri/inbox",
+    "snippet": "Pooja Iyer, HR Manager at Example Corp, has sent you a message"
+  }
+}

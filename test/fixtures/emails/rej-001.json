@@ -1,0 +1,22 @@
+{
+  "id": "rej-001",
+  "expected": "Rejections",
+  "source": "handwritten",
+  "notes": "Polite automated rejection via ATS that mentions future openings (should NOT be Other).",
+  "email": {
+    "from": {
+      "name": "Example Corp Talent",
+      "address": "no-reply@greenhouse.io"
+    },
+    "replyTo": null,
+    "to": [
+      "candidate@example.com"
+    ],
+    "cc": [],
+    "subject": "Your application to Example Corp",
+    "date": "2026-10-14T09:12:00Z",
+    "headers": {},
+    "bodyText": "Hi Candidate,\n\nThank you for your interest in the Data Analyst position at Example Corp and for the time you invested in applying.\n\nAfter careful consideration, we have decided to move forward with other candidates whose experience more closely matches our current needs.\n\nWe were impressed by your background and will keep your profile on file. We encourage you to apply for future openings that match your skills.\n\nBest wishes,\nExample Corp Talent Team",
+    "snippet": "Hi Candidate, Thank you for your interest in the Data Analyst position at Example Corp"
+  }
+}

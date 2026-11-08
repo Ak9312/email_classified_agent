@@ -1,0 +1,40 @@
+{
+  "_comment": "Synthetic Gmail API message (users.messages.get, format=full). Not real mail.",
+  "id": "m-html",
+  "threadId": "m-html",
+  "labelIds": [
+    "INBOX",
+    "UNREAD"
+  ],
+  "snippet": "Jobs for you",
+  "internalDate": "1760432400000",
+  "payload": {
+    "headers": [
+      {
+        "name": "From",
+        "value": "Naukri Job Alerts <jobalerts@naukrialerts.com>"
+      },
+      {
+        "name": "To",
+        "value": "candidate@example.com"
+      },
+      {
+        "name": "Subject",
+        "value": "25 new jobs matching your profile"
+      },
+      {
+        "name": "List-Unsubscribe",
+        "value": "<https://example.com/unsub>"
+      },
+      {
+        "name": "Precedence",
+        "value": "bulk"
+      }
+    ],
+    "mimeType": "text/html",
+    "body": {
+      "size": 1,
+      "data": "PGh0bWw-PGhlYWQ-PHN0eWxlPi54e2NvbG9yOnJlZH08L3N0eWxlPjwvaGVhZD48Ym9keT48aDE-Sm9icyBmb3IgeW91PC9oMT48cD5EYXRhIEFuYWx5c3QgJmFtcDsgQkkgJm1kYXNoOyA8YSBocmVmPSJodHRwczovL2V4YW1wbGUuY29tL2pvYi8xMjM0NTY3ODlhYmNkZWZnaGlqIj5FeGFtcGxlIENvcnA8L2E-PC9wPjxpbWcgc3JjPSJodHRwczovL2V4YW1wbGUuY29tL3BpeGVsLmdpZiI-PHNjcmlwdD50cmFjaygpPC9zY3JpcHQ-PC9ib2R5PjwvaHRtbD4"
+    }
+  }
+}

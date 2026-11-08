@@ -1,0 +1,25 @@
+{
+  "id": "int-001",
+  "expected": "Interview / Recruiter",
+  "source": "handwritten",
+  "notes": "Automated ATS interview-scheduling invite sent on a recruiter's behalf.",
+  "email": {
+    "from": {
+      "name": "Example Corp via Greenhouse",
+      "address": "no-reply@greenhouse.io"
+    },
+    "replyTo": {
+      "name": "Neha Verma",
+      "address": "neha.verma@example-corp.com"
+    },
+    "to": [
+      "candidate@example.com"
+    ],
+    "cc": [],
+    "subject": "Schedule your interview with Example Corp",
+    "date": "2026-10-16T08:30:00Z",
+    "headers": {},
+    "bodyText": "Hi Candidate,\n\nNeha Verma from Example Corp would like to schedule a 45-minute technical interview with you for the Data Engineer role.\n\nPlease choose a time that works for you using the link below:\nhttps://example.com/schedule\n\nIf none of the slots work, reply to this email and Neha will help.\n\nThanks,\nExample Corp Recruiting",
+    "snippet": "Hi Candidate, Neha Verma from Example Corp would like to schedule a 45-minute technical interview"
+  }
+}
