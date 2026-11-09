@@ -58,7 +58,7 @@ describe("classifyWithLlm", () => {
     const [url, init] = fetchImpl.mock.calls[0];
     expect(url).toBe("https://openrouter.ai/api/v1/chat/completions");
     const body = JSON.parse(String(init.body));
-    expect(body).toMatchObject({ model: "a:free", temperature: 0, max_tokens: 150, response_format: { type: "json_object" } });
+    expect(body).toMatchObject({ model: "a:free", temperature: 0, max_tokens: 1000, reasoning: { enabled: false }, response_format: { type: "json_object" } });
     expect(body.messages[0]).toEqual({ role: "system", content: SYSTEM_PROMPT });
     expect(body.messages[1].content).toContain("Subject: Interview");
     expect((init.headers as Record<string, string>).Authorization).toBe("Bearer k");

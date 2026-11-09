@@ -107,7 +107,10 @@ async function callModel(
       body: JSON.stringify({
         model,
         temperature: 0,
-        max_tokens: 150,
+        // Many free models "think" before answering; turn that off and leave room in case a model
+        // ignores the switch, so the JSON answer isn't cut off (empty content = invalid_output).
+        max_tokens: 1000,
+        reasoning: { enabled: false },
         response_format: { type: "json_object" },
         messages: [
           { role: "system", content: SYSTEM_PROMPT },
